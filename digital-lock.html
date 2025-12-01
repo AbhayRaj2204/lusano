@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Locks - LUSANO</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Page-specific CSS  -->
+  <link rel="stylesheet" href="assets/css/digital-lock.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo">
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="digital-lock.html" class="nav-link active">DIGITAL LOCK</a>
+        <a href="hardware.html" class="nav-link">HARDWARE</a>
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+        <a href="support.html" class="nav-link">SUPPORT</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle"><span class="bar"></span><span class="bar"></span><span
+          class="bar"></span></div>
+    </div>
+  </nav>
+
+  <main style="padding-top:90px">
+    <section class="hero" style="min-height:50vh">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line">Next Generation </span>
+            <span class="title-line highlight">Digital Locks</span>
+          </h1>
+          <p class="hero-description">Biometric Precision, Mobile app control, Stylish Design, Emergency Power Backup,
+            Data Encryption & Privacy Protection.</p>
+          <div class="hero-buttons">
+            <a href="#catalog" class="btn btn-primary"><span>Browse Catalog</span><i class="fas fa-arrow-right"></i></a>
+            <a href="contact.html" class="btn btn-secondary"><i class="fas fa-phone"></i><span>Get a Quote</span></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="product-showcase">
+            <div class="product-card floating">
+              <div class="product-image">
+                <div class="digital-lock-icon"><i class="fas fa-lock"></i></div>
+              </div>
+            </div>
+            <div class="product-card floating-delayed">
+              <div class="product-image">
+                <div class="hardware-icon"><i class="fas fa-fingerprint"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter-bar">
+      <div class="container">
+        <div class="filters" id="category-filters">
+          <!-- Categories will be loaded dynamically from CSV -->
+          <button class="filter-chip active" data-filter="all">All</button>
+          <!-- Dynamic category buttons will be inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="products-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Models</h2>
+          <p class="section-subtitle">Engineered for security, designed for everyday comfort.</p>
+        </div>
+        <div class="products-grid">
+          <div class="loading-spinner" style="grid-column: 1 / -1; text-align: center; padding: 40px; color: white;">
+            <i class="fas fa-spinner fa-spin fa-3x"></i>
+            <p style="margin-top: 15px; font-size: 1.1rem;">Loading products...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Need Help Choosing?</h2>
+          <p>Tell us your door type and usage—we’ll recommend the perfect model.</p>
+          <div class="cta-buttons">
+            <a class="btn btn-primary large" href="contact.html"><span>Talk to a Specialist</span><i
+                class="fas fa-arrow-right"></i></a>
+            <a class="btn btn-outline large" href="support.html"><i class="fas fa-book"></i><span>Installation
+                Guide</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer  -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo"
+              style="height:48px; width:auto; display:block; margin-bottom:10px;" />
+            <p>The future of smart living starts here.</p>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="digital-lock.html">Digital Locks</a></li>
+            <li><a href="hardware.html">Smart Hardware</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Installation Guide</a></li>
+            <li><a href="support.html">User Manual</a></li>
+            <li><a href="support.html">Technical Support</a></li>
+            <li><a href="support.html">Warranty</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +65 8188 8852</p>
+            <p><i class="fas fa-envelope"></i> info@lusano.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Singapore</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LUSANO. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <!-- Add product data loader before other scripts -->
+  <script src="assets/js/product-data-loader.js"></script>
+  <!-- Add categories loader script -->
+  <script src="assets/js/categories-loader.js"></script>
+  <!-- Page-specific JS  -->
+  <script src="assets/js/digital-lock.js"></script>
+</body>
+
+</html>

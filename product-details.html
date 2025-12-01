@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUSANO — Product Details</title>
+  <meta name="description" content="Explore LUSANO product details including key features, specifications, installation, and support for smart security solutions." />
+  <meta property="og:title" content="LUSANO — Product Details" />
+  <meta property="og:description" content="Explore LUSANO product details including key features, specifications, installation, and support for smart security solutions." />
+  <meta property="og:image" content="assets/image/Frame 4.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/product-details.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Reuse global nav -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+          <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo">
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="digital-lock.html" class="nav-link">DIGITAL LOCK</a>
+        <a href="hardware.html" class="nav-link">HARDWARE</a>
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+        <a href="support.html" class="nav-link">SUPPORT</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="product-details">
+    <section class="product-hero">
+      <div class="container details-grid">
+        <!-- Added professional image gallery with thumbnails -->
+        <div class="details-media">
+          <div class="image-gallery">
+            <div class="main-image-container">
+              <img id="main-image" src="/placeholder.svg?height=500&width=500" alt="Product Main Image" class="main-image">
+            </div>
+            <div class="thumbnail-container">
+              <div class="thumbnail-scroll">
+                <div id="thumbnail-list" class="thumbnail-list">
+                  <!-- Thumbnails will be populated by JS -->
+                </div>
+              </div>
+              <!-- <div class="thumbnail-nav">
+                <button class="thumb-nav-btn prev" id="thumb-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="thumb-nav-btn next" id="thumb-next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="details-info">
+          <div class="product-badge">
+            <span id="pd-badge">Premium Series</span>
+          </div>
+          <h1 id="pd-title">LUSANO Product</h1>
+          <p id="pd-tagline" class="section-subtitle">Premium smart security.</p>
+          
+          <!-- Added rating and reviews section -->
+          
+
+          <div class="price-section">
+            <div class="price-row">
+              <span class="label">Starting from</span>
+              <span id="pd-price" class="price">$0</span>
+            </div>
+            <div class="price-details">
+              <span class="original-price" id="original-price">$459</span>
+              <span class="discount-badge">Save $70</span>
+            </div>
+          </div>
+
+          <!-- Added color variants section after price -->
+          <div class="color-variants-section">
+            <h4>Available Colors</h4>
+            <div id="color-variants-quick" class="color-variants-quick">
+              <!-- Color variants will be populated by JavaScript ----- comment this //////// -->
+            </div>
+          </div>
+
+          <!-- Enhanced features with icons and descriptions -->
+          <div class="features-section">
+            <h3>Key Features</h3>
+            <ul id="pd-features" class="feature-list">
+              <!-- Filled by JS -->
+            </ul>
+          </div>
+
+          <div class="hero-buttons">
+            <!-- Replace Add to Quote with Product Enquiry WhatsApp button -->
+            <a id="pd-quote" href="https://wa.me/6581888852?text=Hi%2C%20I%27m%20interested%20in%20this%20LUSANO%20product.%20Could%20you%20please%20provide%20more%20details%3F" target="_blank" class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i>
+              <span>Product Enquiry</span>
+            </a>
+            <!-- <button class="btn btn-secondary" id="wishlist-btn">
+              <i class="far fa-heart"></i>
+              <span>Add to Wishlist</span>
+            </button> -->
+          </div>
+
+          <!-- Added quick info cards -->
+          <div class="quick-info">
+            <div class="info-card">
+              <i class="fas fa-shipping-fast"></i>
+              <div>
+                <span class="info-title">Free Shipping</span>
+                <span class="info-desc">On orders over $200</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <span class="info-title">2 Year Warranty</span>
+                <span class="info-desc">Full coverage included</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-tools"></i>
+              <div>
+                <span class="info-title">Professional Install</span>
+                <span class="info-desc">Available in most areas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Added expandable detailed sections -->
+    <section class="product-details-tabs">
+      <div class="container">
+        <div class="tabs-navigation">
+          <button class="tab-btn active" data-tab="specifications">
+            <i class="fas fa-cog"></i>
+            Technical Specifications
+          </button>
+          <button class="tab-btn" data-tab="features">
+            <i class="fas fa-star"></i>
+            Features & Benefits
+          </button>
+          <button class="tab-btn" data-tab="installation">
+            <i class="fas fa-tools"></i>
+            Installation Guide
+          </button>
+          <button class="tab-btn" data-tab="compatibility">
+            <i class="fas fa-door-open"></i>
+            Compatibility
+          </button>
+          <button class="tab-btn" data-tab="support">
+            <i class="fas fa-headset"></i>
+            Support & Warranty
+          </button>
+          <button class="tab-btn" data-tab="color-variants">
+            <i class="fas fa-palette"></i>
+            Color Variants
+          </button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-panel active" id="specifications">
+            <h3>Technical Specifications</h3>
+            <div id="pd-specs" class="specs-grid">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+          <div class="tab-panel" id="features">
+            <h3>Features & Benefits</h3>
+            <div id="detailed-features" class="features-detailed">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+          <div class="tab-panel" id="installation">
+            <h3>Installation Guide</h3>
+            <!-- Removed hardcoded installation content - now populated by JS -->
+            <div id="installation-content-wrapper">
+              <!-- Populated by JavaScript -->
+            </div>
+          </div>
+
+          <div class="tab-panel" id="compatibility">
+            <h3>Door Compatibility</h3>
+            <div class="compatibility-grid">
+              <div class="compat-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Standard residential doors (35-55mm thickness)</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Wooden, metal, and composite doors</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Left and right-handed doors</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-times-circle"></i>
+                <span>Glass doors (not recommended)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="support">
+            <h3>Support & Warranty</h3>
+            <div class="support-content">
+              <div class="warranty-card">
+                <h4>24-Month Limited Warranty</h4>
+                <p>Full coverage against manufacturing defects and hardware failures.</p>
+              </div>
+              <div class="support-options">
+                <div class="support-option">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <h5>Phone Support</h5>
+                    <p>1-800-LUSANO (Mon-Fri 9AM-6PM EST)</p>
+                  </div>
+                </div>
+                <div class="support-option">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h5>Email Support</h5>
+                    <p>support@lusano.com (24-48 hour response)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="color-variants">
+            <h3>Available Color Variants</h3>
+            <div id="color-variants-container" class="color-variants-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem;">
+              <!-- Color variants will be loaded here by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+                        <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo" style="height:48px; width:auto; display:block; margin-bottom:10px;" />
+                        <p>The future of smart living starts here.</p>
+                    </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#">Digital Locks</a></li>
+            <li><a href="#">Smart Hardware</a></li>
+            <li><a href="#">Home Automation</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Installation Guide</a></li>
+            <li><a href="#">User Manual</a></li>
+            <li><a href="#">Technical Support</a></li>
+            <li><a href="#">Warranty</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +65 8188 8852</p>
+            <p><i class="fas fa-envelope"></i> info@lusano.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Singapore</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LUSANO. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <!-- Add product data loader before product details script -->
+  <script src="assets/js/product-data-loader.js"></script>
+  <script src="assets/js/product-details.js"></script>
+  <script src="assets/js/product-zoom.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Page-specific styles for Digital Lock catalog */
+.filter-bar {
+  padding: 2rem 0;
+  background: var(--gray-light);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-chip {
+  border: 1px solid var(--primary-color);
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-chip:hover {
+  transform: translateY(-1px);
+}
+.filter-chip.active {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.product-item.is-hidden {
+  display: none;
+}
+
+/* refine product card actions to improve button look/spacing */
+.products-preview .product-item .product-info .hero-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.products-preview .product-item .product-info .btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.products-preview .product-item .product-info .btn-secondary {
+  border-width: 1.5px;
+}

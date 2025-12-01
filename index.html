@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUSANO - The Future of Smart Living</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/loader.css">
+</head>
+
+<body>
+    <div id="page-loader" role="status" aria-live="polite" aria-label="Page loading">
+        <div class="loader-content" aria-hidden="true">
+            <div class="nav-logo">
+                <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo">
+            </div>
+            <div class="water-gauge">
+                <div class="water-level">
+                    <div class="wave"></div>
+                    <div class="wave wave2"></div>
+                </div>
+            </div>
+            <p class="loader-subtext">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo" class="nav-logo-img"
+                    style="height:40px; width:auto;" />
+                <!-- <h2 class="nav-logo-title">LUSANO</h2> -->
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="digital-lock.html" class="nav-link">DIGITAL LOCK</a>
+                <a href="hardware.html" class="nav-link">HARDWARE</a>
+                <a href="contact.html" class="nav-link">CONTACT US</a>
+                <a href="support.html" class="nav-link">SUPPORT</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Updated carousel structure to load from admin panel -->
+        <div class="hero-carousel" id="heroCarousel">
+            <!-- Carousel slides will be loaded dynamically from admin panel -->
+            <div class="carousel-loading">
+                <p>Loading carousel...</p>
+            </div>
+        </div>
+
+        <!-- Navigation arrows for manual control -->
+        <div class="carousel-navigation">
+            <button class="carousel-nav prev" id="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-nav next" id="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <!-- Carousel indicators will be updated dynamically -->
+        <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Indicators will be generated based on loaded banners -->
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The future of Smart Living with Lusano</h2>
+                <p class="section-subtitle">Innovative solutions for modern security needs</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Security</h3>
+                    <p>Military-grade encryption and biometric authentication for ultimate protection</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Smart Control</h3>
+                    <p>Control your lock. Anytime, anywhere — right from your phone</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Easy Installation</h3>
+                    <p>Quick setup. Instant security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="products-preview" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">A versatile range designed to fit every door, every style.</p>
+            </div>
+            <div class="products-grid">
+                <a href="digital-lock.html" class="product-item" data-aos="slide-up"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="product-image-container">
+                        <div class="product-bg"></div>
+                        <!-- Icon instead of product image -->
+                        <div class="product-icon"
+                            style="font-size: 3rem; color: #ffffff; display: flex; align-items: center; justify-content: center; height: 100%;">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Digital Door Locks</h3>
+                        <p>Smart locks with fingerprint, PIN, and smartphone access</p>
+                    </div>
+                </a>
+                <a href="hardware.html" class="product-item" data-aos="slide-up" data-aos-delay="100"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="product-image-container">
+                        <div class="product-bg"></div>
+                        <!-- Icon instead of product image -->
+                        <div class="product-icon"
+                            style="font-size: 3rem; color: #ffffff; display: flex; align-items: center; justify-content: center; height: 100%;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Hardware</h3>
+                        <p>Premium hardware solutions for modern homes</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Video Section -->
+    <section id="video" class="video-section" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="video-title">See LUSANO in Action</h2>
+                <p class="section-subtitle" id="video-description">A quick look at how our digital locks elevate your
+                    daily routine.</p>
+            </div>
+            <div class="video-wrapper" data-aos="fade-up" id="video-container">
+                <!-- Video will be loaded dynamically from admin panel -->
+            </div>
+        </div>
+    </section>
+
+    <!-- New Schemes Section -->
+    <!-- <section class="schemes" id="schemes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Schemes</h2>
+                <p class="section-subtitle">Flexible options to get you secured faster.</p>
+            </div>
+            <div class="schemes-grid">
+                <div class="scheme-card" data-aos="fade-up">
+                    <div class="icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Bundle & Save</h3>
+                    <p class="section-subtitle">Pair a digital lock with smart hardware and save up to 15%.</p>
+                </div>
+                <div class="scheme-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fas fa-sync"></i></div>
+                    <h3>Trade‑In Program</h3>
+                    <p class="section-subtitle">Trade your old lock for credit toward a new LUSANO model.</p>
+                </div>
+                <div class="scheme-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Extended Warranty</h3>
+                    <p class="section-subtitle">Add up to 3 years of coverage with priority support.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- New Models Section -->
+    <section class="new-models" id="new-models">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Models</h2>
+                <p class="section-subtitle">The latest additions built on our proven security platform.</p>
+            </div>
+            <!-- Updated to dynamically load models from admin panel -->
+            <div class="models-grid" id="models-container">
+                <!-- Models will be loaded dynamically from admin panel -->
+                <div class="loading-placeholder">
+                    <p>Add models from admin panel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="count-up">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item" data-aos="count-up">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Products</div>
+                </div>
+                <div class="stat-item" data-aos="count-up">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item" data-aos="count-up">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">24/7 Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Upgrade Your Security?</h2>
+                <p>Join thousands of satisfied customers who trust LUSANO for their smart home security needs</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary large">
+                        <span>Get Started Today</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline large">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact Sales</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo"
+                            style="height:48px; width:auto; display:block; margin-bottom:10px;" />
+                        <p>The future of smart living starts here.</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Digital Locks</a></li>
+                        <li><a href="#">Smart Hardware</a></li>
+                        <li><a href="#">Home Automation</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Installation Guide</a></li>
+                        <li><a href="#">User Manual</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +65 8188 8852</p>
+                        <p><i class="fas fa-envelope"></i> info@lusano.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Singapore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LUSANO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/lazy-loader.js" defer></script>
+    <script src="assets/js/loader.js" defer></script>
+    <script defer>
+        // Load carousel banners from admin panel
+        async function loadCarouselBanners() {
+            try {
+                const response = await fetch('admin/api/carousel-banners.php');
+                const result = await response.json();
+
+                if (result.success && result.data.length > 0) {
+                    const activeBanners = result.data.filter(banner => banner.status === 'active');
+
+                    if (activeBanners.length > 0) {
+                        const carousel = document.getElementById('heroCarousel');
+                        const indicators = document.getElementById('carouselIndicators');
+
+                        // Clear loading content
+                        carousel.innerHTML = '';
+                        indicators.innerHTML = '';
+
+                        // Create carousel slides
+                        activeBanners.forEach((banner, index) => {
+                            const slide = document.createElement('div');
+                            slide.className = `carousel-slide ${index === 0 ? 'active' : ''}`;
+                            slide.setAttribute('data-type', banner.type);
+
+                            if (banner.type === 'video') {
+                                slide.innerHTML = `
+                                    <video class="carousel-video" muted loop autoplay preload="metadata">
+                                        <source src="${banner.media_url}" type="video/mp4">
+                                        <img src="assets/image/Frame 2.png" alt="${banner.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </video>
+                                `;
+                            } else {
+                                slide.style.backgroundImage = `url('${banner.media_url}')`;
+                            }
+
+                            carousel.appendChild(slide);
+
+                            // Create indicator
+                            const indicator = document.createElement('div');
+                            indicator.className = `carousel-indicator ${index === 0 ? 'active' : ''}`;
+                            indicator.setAttribute('data-slide', index);
+                            indicators.appendChild(indicator);
+                        });
+
+                        // Reinitialize carousel functionality if it exists
+                        if (typeof initializeCarousel === 'function') {
+                            initializeCarousel();
+                        }
+
+                        return;
+                    }
+                }
+
+                // Fallback to default banners if no admin banners are set
+                loadDefaultCarousel();
+
+            } catch (error) {
+                console.error('Error loading carousel banners:', error);
+                loadDefaultCarousel();
+            }
+        }
+
+        function loadDefaultCarousel() {
+            const carousel = document.getElementById('heroCarousel');
+            const indicators = document.getElementById('carouselIndicators');
+
+            carousel.innerHTML = `
+                 Video slide 
+                <div class="carousel-slide active" data-type="video">
+                    <video class="carousel-video" muted loop autoplay preload="metadata">
+                        <source src="assets/image/videoplayback.mp4" type="video/mp4">
+                        <img src="assets/image/Frame 2.png" alt="Smart Home Security" style="width: 100%; height: 100%; object-fit: cover;">
+                    </video>
+                </div>
+                 Image slides 
+                <div class="carousel-slide" data-type="image" style="background-image: url('assets/image/Frame%202.png');"></div>
+                <div class="carousel-slide" data-type="image" style="background-image: url('assets/image/Frame%203.png');"></div>
+                <div class="carousel-slide" data-type="image" style="background-image: url('assets/image/Frame%204.png');"></div>
+            `;
+
+            indicators.innerHTML = `
+                <div class="carousel-indicator active" data-slide="0"></div>
+                <div class="carousel-indicator" data-slide="1"></div>
+                <div class="carousel-indicator" data-slide="2"></div>
+                <div class="carousel-indicator" data-slide="3"></div>
+            `;
+
+            // Reinitialize carousel functionality if it exists
+            if (typeof initializeCarousel === 'function') {
+                initializeCarousel();
+            }
+        }
+
+        // Load new models from admin panel
+        async function loadNewModels() {
+            try {
+                const response = await fetch('admin/api/new-models.php');
+                const result = await response.json();
+
+                if (result.success && result.data.length > 0) {
+                    const container = document.getElementById('models-container');
+                    container.innerHTML = '';
+
+                    result.data.forEach(model => {
+                        // Create SVG placeholder as data URI
+                        const title = model.title || 'LUSANO Model';
+                        const encodedTitle = encodeURIComponent(title);
+                        const placeholder = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect fill='%23222' width='150' height='150'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='12' fill='%23666'%3E${encodedTitle}%3C/text%3E%3C/svg%3E`;
+                        const imgSrc = (model.image && model.image.trim()) ? model.image : placeholder;
+
+                        const modelCard = document.createElement('div');
+                        modelCard.className = 'product-card';
+                        modelCard.setAttribute('data-product-id', model.id);
+                        modelCard.setAttribute('data-aos', 'slide-up');
+
+                        modelCard.innerHTML = `
+                            <div class="head">
+                                <img 
+                                    src="${imgSrc}" 
+                                    alt="${model.title}" 
+                                    class="product-image"
+                                    loading="lazy"
+                                    onerror="this.onerror=null;this.src='${placeholder}';"
+                                />
+                            </div>
+                            <div class="body">
+                                <div class="title">${model.title}</div>
+                                <div class="desc">${model.description}</div>
+                                <div class="price">From <strong>₹${parseInt(model.price).toLocaleString()}</strong></div>
+                               
+                            </div>
+                        `;
+
+                        container.appendChild(modelCard);
+                    });
+                } else {
+                    // Show default models if no admin models are set
+                    const container = document.getElementById('models-container');
+                    // container.innerHTML = `
+                    //     <div class="product-card" data-product-id="s3-slim" data-aos="slide-up">
+                    //         <div class="head"><img src="/placeholder.svg?height=150&width=150" alt="LUSANO S3 Slim" class="product-image" /></div>
+                    //         <div class="body">
+                    //             <div class="title">LUSANO S3 Slim</div>
+                    //             <div class="desc">Ultra‑thin body with biometric unlock and silent drive.</div>
+                    //             <div class="price">From <strong>$339</strong></div>
+                    //             <div class="hero-buttons">
+                    //                 <a href="contact.html?product=S3%20Slim" class="btn btn-primary"><span>Add to Quote</span></a>
+                    //                 <a href="product-details.html?id=s3-slim" class="btn btn-secondary"><span>View Specs</span></a>
+                    //             </div>
+                    //         </div>
+                    //     </div>
+                    //     <div class="product-card" data-product-id="p9-pro" data-aos="slide-up" data-aos-delay="100">
+                    //         <div class="head"><img src="/placeholder.svg?height=150&width=150" alt="LUSANO P9 Pro" class="product-image" /></div>
+                    //         <div class="body">
+                    //             <div class="title">LUSANO P9 Pro</div>
+                    //             <div class="desc">Pro‑grade motor, PIN + Wi‑Fi remote access and alerts.</div>
+                    //             <div class="price">From <strong>$389</strong></div>
+                    //             <div class="hero-buttons">
+                    //                 <a href="contact.html?product=P9%20Pro" class="btn btn-primary"><span>Add to Quote</span></a>
+                    //                 <a href="product-details.html?id=p9-pro" class="btn btn-secondary"><span>View Specs</span></a>
+                    //             </div>
+                    //         </div>
+                    //     </div>
+                    //     <div class="product-card" data-product-id="a1-mini" data-aos="slide-up" data-aos-delay="200">
+                    //         <div class="head"><img src="/placeholder.svg?height=150&width=150" alt="LUSANO A1 Mini" class="product-image" /></div>
+                    //         <div class="body">
+                    //             <div class="title">LUSANO A1 Mini</div>
+                    //             <div class="desc">Compact, rental‑friendly design with auto‑lock.</div>
+                    //             <div class="price">From <strong>$259</strong></div>
+                    //             <div class="hero-buttons">
+                    //                 <a href="contact.html?product=A1%20Mini" class="btn btn-primary"><span>Add to Quote</span></a>
+                    //                 <a href="product-details.html?id=a1-mini" class="btn btn-secondary"><span>View Specs</span></a>
+                    //             </div>
+                    //         </div>
+                    //     </div>
+                    // `;
+                }
+            } catch (error) {
+                console.error('Error loading new models:', error);
+                // Keep default models on error
+            }
+        }
+
+        // Load YouTube videos from admin panel
+        async function loadYouTubeVideos() {
+            try {
+                const response = await fetch('admin/api/youtube-videos.php');
+                const result = await response.json();
+
+                if (result.success && result.data.length > 0) {
+                    const activeVideos = result.data.filter(video => video.status === 'active');
+
+                    if (activeVideos.length > 0) {
+                        const videoSection = document.getElementById('video');
+                        const videoContainer = document.getElementById('video-container');
+                        const videoTitle = document.getElementById('video-title');
+                        const videoDescription = document.getElementById('video-description');
+
+                        // Use the first active video
+                        const video = activeVideos[0];
+
+                        // Update section content
+                        videoTitle.textContent = video.title;
+                        videoDescription.textContent = video.description;
+
+                        // Create YouTube embed
+                        const embedUrl = `https://www.youtube.com/embed/${video.video_id}?rel=0&modestbranding=1`;
+                        videoContainer.innerHTML = `
+                            <iframe
+                                src="${embedUrl}"
+                                title="${video.title}"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        `;
+
+                        // Show the section
+                        videoSection.style.display = 'block';
+                    }
+                }
+                // If no videos, section remains hidden
+
+            } catch (error) {
+                console.error('Error loading YouTube videos:', error);
+                // Keep section hidden on error
+            }
+        }
+
+        window.addEventListener('load', function () {
+            loadCarouselBanners();
+            loadNewModels();
+            loadYouTubeVideos();
+        });
+    </script>
+</body>
+
+</html>

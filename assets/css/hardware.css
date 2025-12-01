@@ -1,0 +1,14 @@
+/* Page-specific styles for Hardware range */
+.products-preview .product-item[data-type="closer"] .product-icon {
+  color: var(--secondary-color);
+}
+.products-preview .product-item[data-type="hinge"] .product-icon {
+  color: var(--secondary-color);
+}
+.products-preview .product-item[data-type="cylinder"] .product-icon {
+  color: var(--secondary-color);
+}
+
+.products-preview .product-item:hover {
+  transform: translateY(-10px) scale(1.01);
+}

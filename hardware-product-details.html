@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardware Product Details - LUSANO</title>
+  <meta name="description"
+    content="Discover LUSANO hardware product details: features, specifications, installation guides, and support for professional-grade door hardware." />
+  <meta property="og:title" content="Hardware Product Details - LUSANO" />
+  <meta property="og:description"
+    content="Discover LUSANO hardware product details: features, specifications, installation guides, and support for professional-grade door hardware." />
+  <meta property="og:image" content="assets/image/Frame 3.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/product-details.css" />
+  <!-- <link rel="stylesheet" href="assets/css/hardware-product-details.css" /> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo">
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="digital-lock.html" class="nav-link">DIGITAL LOCK</a>
+        <a href="hardware.html" class="nav-link active">HARDWARE</a>
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+        <a href="support.html" class="nav-link">SUPPORT</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="product-details">
+    <section class="product-hero">
+      <div class="container details-grid">
+        <!-- Hardware Product Image Gallery -->
+        <div class="details-media">
+          <div class="image-gallery">
+            <div class="main-image-container">
+              <img id="main-image" src="/placeholder.svg?height=500&width=500" alt="Hardware Product Main Image"
+                class="main-image">
+            </div>
+            <div class="thumbnail-container">
+              <div class="thumbnail-scroll">
+                <div id="thumbnail-list" class="thumbnail-list">
+                  <!-- Hardware product thumbnails will be populated by JS -->
+                </div>
+              </div>
+              <!-- <div class="thumbnail-nav">
+                <button class="thumb-nav-btn prev" id="thumb-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="thumb-nav-btn next" id="thumb-next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="details-info">
+          <div class="product-badge">
+            <span id="hw-badge">Professional Series</span>
+          </div>
+          <h1 id="hw-title">HC-200 Door Closer</h1>
+          <p id="hw-tagline" class="section-subtitle">Precision-engineered for commercial and residential applications.
+          </p>
+
+          <div class="price-section">
+            <div class="price-row">
+              <span class="label">Starting from</span>
+              <span id="hw-price" class="price">$129</span>
+            </div>
+            <div class="price-details">
+              <span class="original-price" id="original-price">$159</span>
+              <span class="discount-badge">Save $30</span>
+            </div>
+          </div>
+
+          <!-- Added color variants section after price -->
+          <div class="color-variants-section">
+            <h4>Available Colors</h4>
+            <div id="color-variants-quick" class="color-variants-quick">
+              <!-- Color variants will be populated by JavaScript -------- comment it //////// -->
+            </div>
+          </div>
+
+          <!-- Hardware-specific features -->
+          <div class="features-section">
+            <h3>Key Features</h3>
+            <ul id="hw-features" class="feature-list">
+              <li><i class="fas fa-cog"></i> Adjustable closing force (1-6 settings)</li>
+              <li><i class="fas fa-shield-alt"></i> Weather-resistant aluminum body</li>
+              <li><i class="fas fa-tools"></i> Easy installation with standard templates</li>
+              <li><i class="fas fa-clock"></i> Self-lubricating mechanism</li>
+              <li><i class="fas fa-certificate"></i> EN 1154 certified performance</li>
+            </ul>
+          </div>
+
+          <div class="hero-buttons">
+            <!-- Replace Add to Quote with Product Enquiry WhatsApp button -->
+            <a id="hw-quote"
+              href="https://wa.me/6581888852?text=Hi%2C%20I%27m%20interested%20in%20the%20HC-200%20Door%20Closer.%20Could%20you%20please%20provide%20more%20details%3F"
+              target="_blank" class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i>
+              <span>Product Enquiry</span>
+            </a>
+            <!-- <button class="btn btn-secondary" id="wishlist-btn">
+              <i class="far fa-heart"></i>
+              <span>Add to Wishlist</span>
+            </button> -->
+          </div>
+
+          <!-- Hardware-specific quick info -->
+          <div class="quick-info">
+            <div class="info-card">
+              <i class="fas fa-shipping-fast"></i>
+              <div>
+                <span class="info-title">Free Shipping</span>
+                <span class="info-desc">On orders over $200</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <span class="info-title">5 Year Warranty</span>
+                <span class="info-desc">Commercial grade coverage</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-tools"></i>
+              <div>
+                <span class="info-title">Professional Install</span>
+                <span class="info-desc">Certified technicians</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware-specific detailed sections -->
+    <section class="product-details-tabs">
+      <div class="container">
+        <div class="tabs-navigation">
+          <button class="tab-btn active" data-tab="specifications">
+            <i class="fas fa-cog"></i>
+            Technical Specifications
+          </button>
+          <button class="tab-btn" data-tab="features">
+            <i class="fas fa-star"></i>
+            Features & Performance
+          </button>
+          <button class="tab-btn" data-tab="installation">
+            <i class="fas fa-tools"></i>
+            Installation Guide
+          </button>
+          <button class="tab-btn" data-tab="compatibility">
+            <i class="fas fa-door-open"></i>
+            Door Compatibility
+          </button>
+          <button class="tab-btn" data-tab="support">
+            <i class="fas fa-headset"></i>
+            Support & Warranty
+          </button>
+          <!-- Add color variants tab -->
+          <button class="tab-btn" data-tab="color-variants">
+            <i class="fas fa-palette"></i>
+            Color Variants
+          </button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-panel active" id="specifications">
+            <h3>Technical Specifications</h3>
+            <div id="hw-specs" class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Model</span>
+                <span class="spec-value">HC-200 Professional</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Door Weight</span>
+                <span class="spec-value">Up to 120kg (265 lbs)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Door Width</span>
+                <span class="spec-value">Up to 1400mm (55")</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Closing Force</span>
+                <span class="spec-value">Adjustable 1-6 (EN 1154)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Material</span>
+                <span class="spec-value">Aluminum body, steel internals</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Finish</span>
+                <span class="spec-value">Silver anodized, Black powder coat</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Operating Temperature</span>
+                <span class="spec-value">-40°C to +60°C (-40°F to +140°F)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Certification</span>
+                <span class="spec-value">EN 1154, CE marked</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="features">
+            <h3>Features & Performance</h3>
+            <div id="detailed-features" class="features-detailed">
+              <div class="feature-detail">
+                <div class="feature-icon">
+                  <i class="fas fa-adjust"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Adjustable Closing Force</h4>
+                  <p>Six-position adjustment allows precise tuning for different door weights and usage patterns. Meets
+                    EN 1154 standards for consistent performance.</p>
+                </div>
+              </div>
+              <div class="feature-detail">
+                <div class="feature-icon">
+                  <i class="fas fa-cloud-rain"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Weather Resistant</h4>
+                  <p>Sealed aluminum housing protects internal mechanisms from moisture, dust, and temperature extremes.
+                    Suitable for exterior applications.</p>
+                </div>
+              </div>
+              <div class="feature-detail">
+                <div class="feature-icon">
+                  <i class="fas fa-oil-can"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Self-Lubricating System</h4>
+                  <p>Advanced hydraulic system with integrated lubrication reduces maintenance requirements and ensures
+                    smooth operation over years of use.</p>
+                </div>
+              </div>
+              <div class="feature-detail">
+                <div class="feature-icon">
+                  <i class="fas fa-fire"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Fire Door Compatible</h4>
+                  <p>Certified for use on fire-rated doors with appropriate closing force settings. Maintains fire
+                    safety compliance when properly installed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="installation">
+            <h3>Installation Guide</h3>
+            <div class="installation-content">
+              <div class="install-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Template Positioning</h4>
+                  <p>Use the provided template to mark mounting holes on door and frame. Ensure proper clearance for arm
+                    movement and door swing.</p>
+                </div>
+              </div>
+              <div class="install-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Mounting Installation</h4>
+                  <p>Secure the closer body to the door using provided screws. Install the bracket on the frame,
+                    ensuring proper alignment with the closer arm.</p>
+                </div>
+              </div>
+              <div class="install-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Adjustment & Testing</h4>
+                  <p>Connect the arm assembly and adjust closing force using the adjustment valve. Test door operation
+                    and fine-tune settings as needed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="compatibility">
+            <h3>Door Compatibility</h3>
+            <div class="compatibility-grid">
+              <div class="compat-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Standard hinged doors (inward/outward opening)</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Fire-rated doors (with proper certification)</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Commercial and residential applications</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Wood, metal, and composite door materials</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-times-circle"></i>
+                <span>Sliding or folding doors (not compatible)</span>
+              </div>
+              <div class="compat-item">
+                <i class="fas fa-times-circle"></i>
+                <span>Doors over 120kg weight limit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="support">
+            <h3>Support & Warranty</h3>
+            <div class="support-content">
+              <div class="warranty-card">
+                <h4>5-Year Commercial Warranty</h4>
+                <p>Comprehensive coverage against manufacturing defects and performance issues. Includes replacement
+                  parts and technical support.</p>
+              </div>
+              <div class="support-options">
+                <div class="support-option">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <h5>Technical Support</h5>
+                    <p>1-800-LUSANO (Mon-Fri 8AM-6PM EST)</p>
+                  </div>
+                </div>
+                <div class="support-option">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h5>Installation Support</h5>
+                    <p>technical@lusano.com (Same-day response)</p>
+                  </div>
+                </div>
+                <div class="support-option">
+                  <i class="fas fa-download"></i>
+                  <div>
+                    <h5>Documentation</h5>
+                    <p>Installation guides, CAD files, and specifications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add color variants panel -->
+          <div class="tab-panel" id="color-variants">
+            <h3>Available Color Variants</h3>
+            <div id="color-variants-container" class="color-variants-grid">
+              <!-- Color variants will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="assets/image/lusano_logo_white.avif" alt="LUSANO Logo"
+              style="height:48px; width:auto; display:block; margin-bottom:10px;" />
+            <p>The future of smart living starts here.</p>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="digital-lock.html">Digital Locks</a></li>
+            <li><a href="hardware.html">Smart Hardware</a></li>
+            <li><a href="#">Home Automation</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Installation Guide</a></li>
+            <li><a href="support.html">User Manual</a></li>
+            <li><a href="support.html">Technical Support</a></li>
+            <li><a href="support.html">Warranty</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +65 8188 8852</p>
+            <p><i class="fas fa-envelope"></i> info@lusano.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Singapore</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LUSANO. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+
+  <script src="assets/js/hardware-product-details.js"></script>
+  <script src="assets/js/product-zoom.js"></script>
+</body>
+
+</html>

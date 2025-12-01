@@ -1,0 +1,20 @@
+product_id,product_type,image_path,alt_text,sort_order,status,created_date
+s3-slim,digital,/placeholder.svg?height=500&width=500,"LUSANO S3 Slim Main Image",1,active,2025-01-09
+s3-slim,digital,/placeholder.svg?height=500&width=500,"LUSANO S3 Slim Installation",2,active,2025-01-09
+k2,digital,/placeholder.svg?height=500&width=500,"LUSANO K2 Main Image",1,active,2025-01-09
+k2,digital,/placeholder.svg?height=500&width=500,"LUSANO K2 Keypad Detail",2,active,2025-01-09
+hinge,hardware,/placeholder.svg?height=500&width=500,"SH-90 Stainless Hinge Main",1,active,2025-01-09
+cylinder,hardware,/placeholder.svg?height=500&width=500,"CY-Pro Cylinder Main",1,active,2025-01-09
+saasas,digital,uploads/products/1758123808_68cad720bced6_IMG-20250908-WA0014.jpg,"saasas Image 1",1,active,2025-09-17
+sasasa,digital,uploads/products/1758128705_68caea412444a_IMG-20250908-WA0014.jpg,"sasasa Image 1",1,active,2025-09-17
+saasas,digital,uploads/products/1758129752_68caee58544f1_IMG-20250908-WA0010.jpg,"saasas Image 1",1,active,2025-09-17
+saasas,digital,uploads/products/1758129762_68caee62a05a0_IMG-20250908-WA0013.jpg,"saasas Image 1",1,active,2025-09-17
+sasasa,digital,uploads/products/1758129772_68caee6c9b43d_IMG-20250908-WA0015.jpg,"sasasa Image 1",1,active,2025-09-17
+sasasa,digital,uploads/products/1758129782_68caee7610691_IMG-20250908-WA0013.jpg,"sasasa Image 1",1,active,2025-09-17
+sasasa,digital,uploads/products/1758129949_68caef1de1cfb_IMG-20250908-WA0012.jpg,"abhay Image 1",1,active,2025-09-17
+asasasa,digital,uploads/products/1758132787_68cafa333f851_IMG-20250908-WA0016.jpg,"asasasa Image 1",1,active,2025-09-17
+asasasa,digital,uploads/products/1758132827_68cafa5b73a1a_IMG-20250908-WA0013.jpg,"asasasa Image 1",1,active,2025-09-17
+zxzxz,hardware,uploads/products/1759429072_68dec1d04cb6c_IMG-20250908-WA0016.jpg,"xxz Image 1",1,active,2025-10-02
+zxzxz,hardware,uploads/products/1759558824_68e0bca8a60f4_IMG-20250908-WA0014.jpg,"Product 2 Image 1",1,active,2025-10-04
+lusano-1,digital,uploads/products/1761486674_68fe27522a1c3_1758128705_68caea412444a_IMG-20250908-WA0014.jpg,"LUsano 1 Image 1",1,active,2025-10-26
+lusano-1,digital,uploads/products/1761486713_68fe27793395c_1758054703_0_IMG-20250908-WA0013.jpg,"LUsano 1 Image 1",1,active,2025-10-26
