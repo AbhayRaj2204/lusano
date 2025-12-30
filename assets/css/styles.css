@@ -2648,3 +2648,38 @@ p {
     width: 100%;
   }
 }
+
+/* Mobile Navbar Adjustments - Logo and Toggle Button */
+@media (max-width: 768px) {
+  .nav-logo img {
+    height: 28px !important;
+    width: auto;
+  }
+
+  .nav-toggle {
+    gap: 4px;
+  }
+
+  .bar {
+    width: 22px;
+    height: 2px;
+    margin: 3px 0;
+  }
+}
+
+/* Extra Small Mobile Screens */
+@media (max-width: 480px) {
+  .nav-logo img {
+    height: 24px !important;
+  }
+
+  .bar {
+    width: 18px;
+    height: 2px;
+    margin: 3px 0;
+  }
+
+  .nav-toggle {
+    gap: 3px;
+  }
+}
