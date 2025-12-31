@@ -2106,7 +2106,7 @@ p {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 4px;
+  gap: 0px;
 }
 
 .bar {
@@ -2657,7 +2657,7 @@ p {
   }
 
   .nav-toggle {
-    gap: 4px;
+    gap: 0px;
   }
 
   .bar {
@@ -2680,6 +2680,6 @@ p {
   }
 
   .nav-toggle {
-    gap: 3px;
+    gap: 0px;
   }
 }
